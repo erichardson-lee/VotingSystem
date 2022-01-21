@@ -2,7 +2,7 @@
 
 namespace VotingSystemClasses
 {
-    class SingleVote : IOptionsInfo
+    public class SingleVote : IOptionsInfo
     {
         public IOption[] Options { get; private set; }
 
@@ -10,9 +10,9 @@ namespace VotingSystemClasses
 
         public bool ordered { get => false; }
 
-        SingleVote(IOption[] options)
+        public SingleVote(IOption[] options)
         {
-            this.Options = options;
+            Options = options;
         }
     }
 }
