@@ -8,29 +8,12 @@ namespace UnitTesting
     [TestClass]
     public class SingleVoteTest
     {
-
-        static IOption[] Options = new Candidate[2] {
-                new Candidate()
-                {
-                    FirstName = "John",
-                    LastName = "Smith",
-                    ID = "ABC123",
-                },
-                new Candidate()
-                {
-                    FirstName = "Carl",
-                    LastName = "Berg",
-                    ID = "123ABC",
-                }
-           };
-
         SingleVote singleVote;
-
 
         [TestInitialize]
         public void BeforeEach()
         {
-            singleVote = new SingleVote(Options);
+            singleVote = new SingleVote(TestData.Candinates);
         }
 
 
