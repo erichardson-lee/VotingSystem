@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VotingSystem.Interfaces;
+using VotingSystemClasses.Interfaces;
 
 
-namespace VotingSystem.Classes
+namespace VotingSystemClasses
 {
     class LocalVoter : IVoter
     {
