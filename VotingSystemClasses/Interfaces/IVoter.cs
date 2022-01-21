@@ -1,4 +1,4 @@
-﻿namespace VotingSystem.Interfaces
+﻿namespace VotingSystemClasses.Interfaces
 {
     interface IVoter
     {
