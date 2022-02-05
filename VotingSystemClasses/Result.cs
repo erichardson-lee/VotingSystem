@@ -1,4 +1,5 @@
-﻿using VotingSystemClasses.Interfaces;
+﻿using System.Collections.Generic;
+using VotingSystemClasses.Interfaces;
 
 namespace VotingSystemClasses
 {
@@ -12,6 +13,10 @@ namespace VotingSystemClasses
         {
             Option = option;
             Total = total;
+        }
+
+        public Result(KeyValuePair<IOption, int> current, int v)
+        {
         }
     }
 }
