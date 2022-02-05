@@ -1,9 +1,17 @@
-﻿namespace VotingSystemClasses
-{
-    class Result
-    {
-        public string Option { get; private set; }
+﻿using VotingSystemClasses.Interfaces;
 
-        public string Total { get; private set; }
+namespace VotingSystemClasses
+{
+    public class Result
+    {
+        public IOption Option { get; private set; }
+
+        public int Total { get; private set; }
+
+        public Result(IOption option, int total)
+        {
+            Option = option;
+            Total = total;
+        }
     }
 }

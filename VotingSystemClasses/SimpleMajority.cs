@@ -3,9 +3,19 @@ using VotingSystemClasses.Interfaces;
 
 namespace VotingSystemClasses
 {
-    class SimpleMajority : IVoteHandler
+    public class SimpleMajority : IVoteHandler
     {
-        public Result[] results => throw new NotImplementedException();
+
+        public readonly IOptionsInfo optionsInfo;
+
+        public SimpleMajority(IOptionsInfo optionsInfo) => this.optionsInfo = optionsInfo;
+
+        public IOption GetWinner()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Result[] Results => throw new NotImplementedException();
 
         public void AddVote(IVoter voter, IOption option)
         {
@@ -17,9 +27,10 @@ namespace VotingSystemClasses
             throw new NotImplementedException();
         }
 
-        public IOptionsInfo getOptions()
+        public IOptionsInfo GetOptions()
         {
             throw new NotImplementedException();
         }
+
     }
 }

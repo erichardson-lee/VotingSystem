@@ -4,7 +4,7 @@ using VotingSystemClasses.Interfaces;
 
 namespace VotingSystemClasses
 {
-    class LocalVoter : IVoter
+    public class LocalVoter : IVoter
     {
         public string getId()
         {
