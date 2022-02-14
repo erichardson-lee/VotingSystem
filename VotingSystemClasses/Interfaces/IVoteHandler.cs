@@ -1,6 +1,6 @@
 ﻿namespace VotingSystemClasses.Interfaces
 {
-    interface IVoteHandler
+    public interface IVoteHandler
     {
         public IOption GetWinner();
 
