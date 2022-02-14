@@ -90,7 +90,7 @@ namespace VotingSystemClasses
 
         public IOptionsInfo GetOptions()
         {
-            throw new NotImplementedException();
+            return optionsInfo;
         }
 
     }

@@ -6,9 +6,16 @@ namespace VotingSystemClasses
 {
     public class LocalVoter : IVoter
     {
+        private string _id;
+
         public string getId()
         {
-            throw new NotImplementedException();
+            return _id;
+        }
+
+        public LocalVoter(string ID)
+        {
+            _id = ID;
         }
     }
 
